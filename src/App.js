@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Splitleft from './components/Splitleft'
+import Middlesec from './components/middlesection'
+import Topnav from './components/Topnav'
+import Myprojects from './components/myprojects'
+import Footer from './components/footer'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+<Topnav/>
+<div className="full-cont">
+<Splitleft/>
+
+</div>
+
+<Middlesec/>
+
+<Myprojects/>
+
+
+<Footer/>
     </div>
   );
 }

@@ -1,0 +1,166 @@
+footer{
+
+    height:500px;
+    background-color: rgb(32, 31, 31);
+    color:white;
+    text-align: center;
+
+}
+
+footer h1{
+    padding-top: 80px;
+    font-family: 'Libre Baskerville', serif;
+
+    font-weight: 100;
+    font-size: 50px;
+    word-spacing: 5px;
+    padding-bottom: 30px;
+}
+
+footer .inp{
+
+    height: 50px;
+    width:300px;
+    outline:none;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+    font-size: 20px;
+   
+}
+
+footer .sbtn{
+
+    padding:5px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border:2px solid white;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color:white;
+    background-color: transparent;
+}
+
+footer span{
+    padding-left: 30px;
+}
+
+
+footer .qlinks{
+
+    padding-top: 70px;
+    display: inline-block;
+}
+
+footer .qlinks p{
+
+    padding-right: 120px;
+    padding-left: 120px;
+     display: inline-block;
+     cursor: pointer;
+     font-size: 15px;
+     
+}
+
+footer .qlinks p:hover{
+
+    color:grey;
+}
+
+footer .cp{
+
+    padding-top: 60px;
+   
+    color:grey;
+    font-size: 12px;
+}
+footer .cp p{
+    background-color: black;
+    padding:4px;
+}
+
+footer .social{
+    padding-top: 60px;
+}
+
+footer .social a{
+
+    text-decoration: none;
+    color:white;
+}
+
+footer .social p{
+
+    display: inline-block;
+    cursor: pointer;
+   padding-left:30px;
+   font-size: 25px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+   
+    footer h1{
+        font-size: 30px;
+    }
+
+    footer .sbtn{
+        margin-top: 30px;
+    }
+
+
+
+    footer .inp{
+
+        height: 40px;
+        width:200px;
+     
+}
+
+  }
+
+
+  @media only screen and (max-width:380px){
+
+    footer h1{
+        font-size: 20px;
+    }
+
+
+    footer .inp{
+
+        height: 40px;
+        width:200px;
+     
+}
+
+
+footer .qlinks p{
+    display: none;
+}
+
+
+
+  }
+
+  @media only screen and (max-width:270px){
+    footer h1{
+        font-size: 17px;
+    }
+
+
+    footer .inp{
+
+        height: 40px;
+        width:150px;
+     
+}
+
+footer .qlinks p{
+    display: none;
+}
+
+  }

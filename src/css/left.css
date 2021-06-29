@@ -1,0 +1,130 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.bor-sl{
+
+    
+    padding-top: 20vh;
+
+}
+.s-l{
+
+
+padding-top: 8vh;
+
+display: block;
+width:90vw;
+height: 75vh;
+
+
+background-size: cover;
+background-repeat: no-repeat;
+
+margin-left: 6vw;
+
+}
+
+.s-l .hello {
+
+    font-size:2.5vw;
+    display: inline;
+}
+
+.s-l h1{
+
+    padding-top: 20px;
+    font-size: 4vw;
+}
+.s-l h4{
+
+    padding-top: 20px;
+    font-size: 1.5vw;
+    padding-bottom: 30px;
+}
+.s-l svg{
+ 
+    padding-left: 1vw;
+    width:20vw;
+}
+.s-l svg line{
+    stroke:rgb(0,0,0);
+    stroke-width:4;
+    
+}
+.s-l .ping{
+    
+    padding:10px;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); 
+     font-family: sans-serif;
+    color:white;
+    padding-right: 30px;
+    padding-left:30px;
+    font-size: 15px;
+    font-weight: 900;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.s-l .info{
+    
+    padding:8.5px;
+   background-color: white;
+    color:blueviolet;
+    border-color: blueviolet;
+    padding-right: 30px;
+    padding-left:30px;
+    font-size: 15px;
+    font-weight: 900;
+    margin-left: 20px;
+   
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.s-l .info:hover{
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+}
+
+.s-l .ping:hover{
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.s-l img{
+
+    float:right;
+    margin-top: -15vw;
+    width:39vw;
+    height:27vw;
+    filter: drop-shadow(2.5px 2.5px 5px #07afec);
+
+    
+}
+
+
+@media only screen and (max-width: 500px) {
+    .s-l img{
+margin-top: -115px;
+    
+    }
+
+    .s-l .info{
+
+        margin-top: 20px;
+        margin-left: -1px;
+        display: block;
+    }
+    
+
+  }
+

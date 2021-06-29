@@ -1,0 +1,154 @@
+.mypro .p-1{
+
+    
+    display:inline-block;
+    padding:10px;
+}
+
+
+.mypro{
+
+    width:88%;
+    height:auto;
+    margin-left: 6vw;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+
+
+
+.mypro  h1{
+    padding-top: 30px;
+    font-size: 70px;
+    font-family:fantasy;
+    font-weight: 400;
+    padding-bottom: 60px;
+
+
+text-align: center;
+}
+
+.mypro .p-1 .content{
+    border:3px solid black;
+    height:400px;
+    width:400px;
+text-align: center;
+  
+}
+
+.mypro .p-1 img{
+
+    height:400px;
+    width:400px;
+}
+.mypro .p-1 img:hover{
+
+    opacity: 1;
+
+}
+
+ 
+
+
+.container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+@media only screen and (max-width: 700px) {
+
+    .mypro .p-1 .content{
+        border:3px solid black;
+        height:300px;
+        width:300px;
+    text-align: center;
+      
+    }
+    
+    .mypro .p-1 img{
+    
+        height:300px;
+        width:300px;
+    }
+
+    .mypro h1{
+        font-size: 40px;
+    }
+
+}
+
+
+@media only screen and (max-width: 550px) {
+
+    .mypro .p-1 .content{
+        border:3px solid black;
+        height:200px;
+        width:200px;
+    text-align: center;
+      
+    }
+    
+    .mypro .p-1 img{
+    
+        height:200px;
+        width:200px;
+    }
+
+}
+
+
+@media only screen and (max-width: 300px) {
+
+    .mypro .p-1 .content{
+        border:3px solid black;
+        height:100px;
+        width:100px;
+    text-align: center;
+      
+    }
+    
+    .mypro .p-1 img{
+    
+        height:100px;
+        width:100px;
+    }
+
+}

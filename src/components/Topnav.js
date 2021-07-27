@@ -25,30 +25,35 @@ function togglefunc(){
   
     let temp=document.getElementsByClassName("ins")[0];
     var set,set1;
-    console.log(temp.style.display,"te")
+    //console.log(temp.style.display,"te")
     if(temp.style.display!=="none"){
 
       set="none";
       set1="none"
+      document.getElementById("baricon").classList.remove("fa-close");
+      document.getElementById("baricon").classList.add("fa-bars");
+
 
     }else{
 
       set="block";
       set1="unset";
+      document.getElementById("baricon").classList.remove("fa-bars");
+      document.getElementById("baricon").classList.add("fa-close");
 
     }
 
-    console.log(set,set1)
     
     for(let i=0;i<4;i++){
       document.getElementsByClassName("m-l")[i].style.display=set;
     
     }
     document.getElementsByClassName("ins")[0].style.display=set1;
+
     document.getElementsByClassName("s-ln")[0].style.display=set1;
     document.getElementsByClassName("s-ln")[1].style.display=set1;
   
-  console.log(document.getElementsByClassName("m-l")[0])
+  //console.log(document.getElementsByClassName("m-l")[0])
   
    
 }
@@ -73,7 +78,7 @@ KUMARESH
 <p className="quote">I'm not clever, I'm just curious.
 </p>
 <p  className="icon" onClick={togglefunc} >
-    <i className="fa fa-bars"></i>
+    <i className="fa fa-bars" id="baricon"></i>
 
   </p>
   <a href="#home" className="m-l" id="d-f" >HOME</a>

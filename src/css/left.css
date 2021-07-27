@@ -27,6 +27,11 @@ margin-left: 6vw;
 
 }
 
+.s-l a{
+    color:blueviolet;
+    text-decoration: none;
+}
+
 .s-l .hello {
 
     font-size:2.5vw;

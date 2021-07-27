@@ -38,6 +38,7 @@ filter: drop-shadow(2.5px 2.5px 5px blueviolet);
   color:white;
   background-color: white;
 
+
 }
 
 hr{
@@ -109,6 +110,8 @@ display: inline-flex;
   padding-left: 8%;
   font-size: 1.3vw;
   cursor: pointer;
+  transition: height 1s ease-in-out;
+
 }
 
 .topnav .s-ln{

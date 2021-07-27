@@ -2,6 +2,23 @@ import React from 'react'
 import '../css/left.css'
 import proglogo from '../images/programmer.png'
 
+import axios from 'axios'
+
+
+function postmessage(){
+  
+    axios.post('https://secretmsgs.herokuapp.com/portfolio/message', {
+  "message":prompt("Your Name ? ")
+})
+.then(function (response) {
+  
+ // console.log(response);
+  document.getElementById("mbox").value="";
+  //alert("Message sent");
+
+})
+}
+
 export default function Splitleft() {
     return (
         <div>
@@ -21,9 +38,11 @@ export default function Splitleft() {
 
 <h4>SOFTWARE DEVELOPER</h4>
 
-<button className="ping">PING ME</button>
+<button className="ping" onClick={postmessage}>PING ME</button>
 
-<button className="info">GET CV</button>
+<button className="info">
+    <a href="RESUME_KUMARESH.pdf" download>
+    GET CV</a></button>
 <img src={proglogo} alt="programmer" />
 
 <div id="about"></div>

@@ -39,6 +39,7 @@ padding-left: 10%;
 
 
 .m-b{
+    width: 95%;
 }
 
     .m-b h1{
@@ -49,7 +50,6 @@ font-size: 40px;
     .m-b p{
 
         font-size: 17px;
-        border:2px solid black;
         
         padding:none;
     }

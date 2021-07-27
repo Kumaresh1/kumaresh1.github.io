@@ -1,5 +1,21 @@
 import React from 'react'
 import '../css/footer.css'
+import axios from 'axios'
+
+
+function postmessage(){
+    console.log("pm");
+    axios.post('https://secretmsgs.herokuapp.com/portfolio/message', {
+  "message":document.getElementById("mbox").value
+})
+.then(function (response) {
+  
+  console.log(response);
+  document.getElementById("mbox").value="";
+  alert("Message sent");
+
+})
+}
 
 export default function footer() {
     return (
@@ -9,8 +25,8 @@ export default function footer() {
 </h1>
 
 <div >
-    <form>
-    <input type="text" className="inp" />
+    <form onSubmit={postmessage}>
+    <input type="text" className="inp" id="mbox"/>
 <span></span>
 <input type="submit" className="sbtn"/>
     </form>
